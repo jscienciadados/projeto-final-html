@@ -1,0 +1,147 @@
+/* Reset do CSS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.sobre {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.sobre .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.habilidades,
+.projetos,
+.contato {
+    padding: 3rem 0;
+}
+
+.habilidades-lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.habilidades-lista li {
+    background-color: #e0e0e0;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.projeto {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contato-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes-sociais a {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario-contato button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .sobre .container {
+        flex-direction: column;
+    }
+
+    .sobre .avatar {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .contato-info {
+        flex-direction: column;
+    }
+}
